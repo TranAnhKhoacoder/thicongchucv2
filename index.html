@@ -87,749 +87,12 @@
       <div class="hidden sm:flex items-center gap-4 text-slate-300 text-xs">
         <span><i class="fa-solid fa-landmark text-amber-400 mr-1.5"></i>Thành phố Huế (Trực thuộc Trung ương)</span>
         <span class="text-slate-600">|</span>
-        <span><i class="fa-solid fa-shield-halved text-amber-400 mr-1.5"></i>Chuẩn hóa Đề cương 2026</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- MAIN HEADER -->
-  <header class="glass-header text-white shadow-xl gold-border-gradient sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 py-3 sm:py-3.5 flex items-center justify-between gap-3">
-      <!-- Brand / Emblem -->
-      <div onclick="goHome()" class="flex items-center gap-3 sm:gap-4 cursor-pointer group">
-        <!-- Biểu tượng Hành chính Công & Hoa văn Huế -->
-        <div class="relative w-11 h-11 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-red-700 via-amber-500 to-yellow-400 p-0.5 shadow-lg flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
-          <div class="w-full h-full bg-gov-navy rounded-[14px] flex items-center justify-center relative overflow-hidden">
-            <svg viewBox="0 0 64 64" class="w-8 h-8 sm:w-10 sm:h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="32" cy="32" r="27" stroke="#FBBF24" stroke-width="2" stroke-dasharray="3 2"/>
-              <circle cx="32" cy="32" r="21" fill="#B91C1C" stroke="#F59E0B" stroke-width="1.5"/>
-              <polygon points="32,14 36.3,26.6 49.2,26.9 38.9,34.7 42.6,47 32,39.6 21.4,47 25.1,34.7 14.8,26.9 27.7,26.6" fill="#FDE047"/>
-            </svg>
-          </div>
-        </div>
-        <div>
-          <div class="flex flex-wrap items-center gap-1.5">
-            <span class="px-2 py-0.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/40 rounded-md">
-              Bản Tham Khảo Củng Cố Kiến Thức
-            </span>
-          </div>
-          <h1 class="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-white leading-snug mt-0.5 group-hover:text-amber-200 transition-colors">
-            HỆ THỐNG THI THỬ CÔNG CHỨC THÀNH PHỐ HUẾ
-          </h1>
-          <p class="hidden md:block text-xs text-blue-200/90 mt-0.5">
-            13 Văn bản Luật, Nghị quyết, Nghị định (2018 – 2026) &amp; 85 Câu Tiếng Anh Bậc 2 theo Vị trí tuyển dụng
-          </p>
-        </div>
-      </div>
-
-      <!-- Header Right Controls -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <button onclick="openLeaderboardModal()" class="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-xs sm:text-sm font-bold text-amber-300 transition flex items-center gap-2 cursor-pointer">
-          <i class="fa-solid fa-trophy text-amber-400"></i>
-          <span class="hidden sm:inline">Bảng xếp hạng</span>
-          <span class="sm:hidden">BXH</span>
-        </button>
-        <button onclick="openDocModal()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-xs sm:text-sm font-semibold text-white transition flex items-center gap-2 cursor-pointer">
-          <i class="fa-solid fa-book-scale text-amber-400"></i>
-          <span class="hidden sm:inline">Danh mục 13 Văn bản</span>
-          <span class="sm:hidden">Tài liệu</span>
-        </button>
-        <button id="btnHeaderHome" onclick="goHome()" class="hidden px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition flex items-center gap-1.5 shadow-md cursor-pointer">
-          <i class="fa-solid fa-house"></i>
-          <span class="hidden sm:inline">Trang chủ</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- MAIN CONTENT CONTAINER -->
-  <main class="flex-grow max-w-7xl w-full mx-auto px-3 sm:px-6 py-5 sm:py-8">
-
-    <!-- ==================== VIEW 1: DASHBOARD / CẤU HÌNH ĐỀ THI ==================== -->
-    <section id="viewDashboard" class="animate-fade-in space-y-6">
-      
-      <!-- Hero Banner & Thống kê Ngân hàng đề -->
-      <div class="hero-hue-pattern rounded-2xl shadow-sm border border-slate-200/90 p-5 sm:p-7 relative overflow-hidden">
-        <!-- Họa tiết cung đình cách điệu góc phải -->
-        <svg class="absolute -right-8 -bottom-8 w-56 h-56 text-amber-500/10 pointer-events-none" viewBox="0 0 200 200" fill="currentColor">
-          <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="8" stroke-dasharray="12 6"/>
-          <circle cx="100" cy="100" r="65" fill="none" stroke="currentColor" stroke-width="4"/>
-          <polygon points="100,25 118,75 170,75 128,108 144,160 100,128 56,160 72,108 30,75 82,75"/>
-        </svg>
-
-        <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <div class="space-y-2.5 max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-900 border border-blue-200 text-xs font-bold shadow-2xs">
-              <i class="fa-solid fa-award text-amber-600"></i>
-              <span>Cập nhật chuẩn xác: Luật CQĐP 2025 • Luật CBCC 2025 • NQ 57 • QĐ 1026/QĐ-UBND Huế</span>
-            </div>
-            <h2 class="text-xl sm:text-2xl md:text-[26px] font-extrabold text-gov-navy tracking-tight">
-              Hệ thống Luyện thi &amp; Đánh giá Năng lực Công chức Thành phố Huế
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Ngân hàng câu hỏi trắc nghiệm chuẩn hóa theo mô hình chính quyền địa phương 2 cấp (Thành phố trực thuộc Trung ương – xã, phường, đặc khu), tích hợp đảo đề ngẫu nhiên, giải thích căn cứ pháp lý và Bảng Xếp Hạng trực tuyến đồng bộ thời gian thực.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-3 gap-2.5 sm:gap-3.5 flex-shrink-0">
-            <div class="bg-white/95 border border-blue-100 rounded-2xl p-3 sm:p-4 text-center shadow-2xs min-w-[92px] sm:min-w-[116px]">
-              <div id="statTotalP1" class="text-xl sm:text-2xl font-black text-gov-navy">90</div>
-              <div class="text-[11px] font-bold text-slate-500 mt-0.5">Câu Kiến thức chung</div>
-            </div>
-            <div class="bg-white/95 border border-amber-100 rounded-2xl p-3 sm:p-4 text-center shadow-2xs min-w-[92px] sm:min-w-[116px]">
-              <div id="statTotalP2" class="text-xl sm:text-2xl font-black text-amber-600">85</div>
-              <div class="text-[11px] font-bold text-slate-500 mt-0.5">Câu Tiếng Anh Bậc 2</div>
-            </div>
-            <div class="bg-white/95 border border-emerald-100 rounded-2xl p-3 sm:p-4 text-center shadow-2xs min-w-[92px] sm:min-w-[116px]">
-              <div id="statTotalLbCount" class="text-xl sm:text-2xl font-black text-emerald-600">0</div>
-              <div class="text-[11px] font-bold text-slate-500 mt-0.5">Lượt thi trên BXH</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Thanh chọn Chế độ làm bài & Thông tin thí sinh -->
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-5 space-y-4">
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div class="flex items-center gap-3.5">
-            <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-100 to-amber-200 text-amber-700 flex items-center justify-center text-lg flex-shrink-0 shadow-inner">
-              <i class="fa-solid fa-sliders"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 text-sm sm:text-base">Chế độ Luyện thi &amp; Củng cố kiến thức</h3>
-              <p class="text-xs text-slate-500 mt-0.5">Lựa chọn thi áp lực đồng hồ đếm ngược hoặc học tập giải thích ngay sau mỗi câu</p>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-2 gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
-            <button id="modeExamBtn" onclick="setMode('exam')" class="px-3.5 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center justify-center gap-2 bg-gov-navy text-white shadow cursor-pointer">
-              <i class="fa-solid fa-stopwatch text-amber-400"></i>
-              <span>Thi thử (Tính giờ)</span>
-            </button>
-            <button id="modePracticeBtn" onclick="setMode('practice')" class="px-3.5 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 cursor-pointer">
-              <i class="fa-solid fa-lightbulb text-amber-500"></i>
-              <span>Ôn tập (Xem giải thích ngay)</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Thông tin thí sinh để ghi nhận Bảng Xếp Hạng -->
-        <div class="pt-3.5 border-t border-slate-100 grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
-          <div class="md:col-span-5 flex items-center gap-2.5">
-            <div class="w-9 h-9 rounded-xl bg-blue-50 text-gov-blue border border-blue-200 flex items-center justify-center flex-shrink-0">
-              <i class="fa-solid fa-user-tie"></i>
-            </div>
-            <div class="w-full">
-              <label for="candidateNameInput" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500">Họ và tên thí sinh (Lưu BXH)</label>
-              <input id="candidateNameInput" type="text" maxlength="50" placeholder="Nhập họ tên (Mặc định: Thí sinh ẩn danh)" class="w-full mt-0.5 px-3 py-1.5 rounded-lg border border-slate-300 text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-slate-50 focus:bg-white transition" />
-            </div>
-          </div>
-          <div class="md:col-span-4 flex items-center gap-2.5">
-            <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 border border-amber-200 flex items-center justify-center flex-shrink-0">
-              <i class="fa-solid fa-building-columns"></i>
-            </div>
-            <div class="w-full">
-              <label for="candidateUnitInput" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500">Đơn vị / Địa phương dự tuyển</label>
-              <input id="candidateUnitInput" type="text" maxlength="60" placeholder="VD: UBND Phường An Cựu, Sở Nội vụ..." class="w-full mt-0.5 px-3 py-1.5 rounded-lg border border-slate-300 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50 focus:bg-white transition" />
-            </div>
-          </div>
-          <div class="md:col-span-3 flex justify-end">
-            <button onclick="openLeaderboardModal()" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-50 to-yellow-50 hover:from-amber-100 hover:to-yellow-100 border border-amber-300 text-amber-900 font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-2xs cursor-pointer">
-              <i class="fa-solid fa-ranking-star text-amber-600"></i>
-              <span>Mở BXH Toàn Cảnh</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2 KHỐI PHẦN THI CHÍNH -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        <!-- CARD PHẦN I: KIẾN THỨC CHUNG -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-blue-600/50 hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
-          <div>
-            <div class="bg-gradient-to-r from-gov-navy via-gov-royal to-blue-800 px-5 py-4 text-white flex items-center justify-between">
-              <div class="flex items-center gap-3.5">
-                <div class="w-11 h-11 rounded-xl bg-white/15 border border-white/20 flex items-center justify-center text-amber-300 text-xl font-black shadow-inner">
-                  I
-                </div>
-                <div>
-                  <span class="text-[11px] uppercase tracking-wider text-blue-200 font-bold">Môn thi điều kiện • Phần I</span>
-                  <h3 class="text-base sm:text-lg font-extrabold">Kiểm tra Kiến thức, Năng lực chung</h3>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 border border-amber-400/40 text-amber-200 text-xs font-bold whitespace-nowrap">
-                13 Văn bản
-              </span>
-            </div>
-
-            <div class="p-5 space-y-4">
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Hệ thống câu hỏi trắc nghiệm bao phủ Luật Tổ chức CQĐP 2025, Luật CBCC 2025, Luật PCTN 2018, Luật Sửa đổi Luật Ban hành VBQPPL 2025, NQ 57-NQ/TW, NQ 03/NQ-CP, các Nghị định 150, 370, 170, 300, 361 và Kế hoạch 18, QĐ 1026 của UBND TP Huế.
-              </p>
-
-              <!-- Tùy chọn phạm vi ôn tập Phần I -->
-              <div class="space-y-1.5">
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">
-                  <i class="fa-solid fa-filter text-blue-600 mr-1"></i> Chọn phạm vi kiến thức Phần I:
-                </label>
-                <select id="selectTopicP1" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition">
-                  <option value="ALL">★ Đề tổng hợp ngẫu nhiên toàn bộ 13 văn bản (90 câu)</option>
-                  <option value="1">1. Luật Tổ chức chính quyền địa phương ngày 16/6/2025 (Chương III &amp; IV - 8 câu)</option>
-                  <option value="2">2. Luật Cán bộ, công chức ngày 24/6/2025 (Chương II &amp; IV - 8 câu)</option>
-                  <option value="3">3. Luật Phòng, chống tham nhũng ngày 20/11/2018 (Chương I &amp; II - 8 câu)</option>
-                  <option value="4">4. Luật Sửa đổi, bổ sung Luật Ban hành VBQPPL ngày 25/6/2025 (7 câu)</option>
-                  <option value="5">5. Nghị quyết số 57-NQ/TW ngày 22/12/2024 về Đột phá KHCN &amp; CĐS (7 câu)</option>
-                  <option value="6">6. Nghị định 150/2025/NĐ-CP (Cơ quan chuyên môn UBND cấp tỉnh, xã, đặc khu - 7 câu)</option>
-                  <option value="7">7. Nghị định 370/2025/NĐ-CP (Sửa đổi, bổ sung Nghị định 150/2025/NĐ-CP - 6 câu)</option>
-                  <option value="8">8. Nghị định 170/2025/NĐ-CP (Tuyển dụng, sử dụng và quản lý công chức - 8 câu)</option>
-                  <option value="9">9. Nghị định 300/2026/NĐ-CP (Sửa đổi, bổ sung Nghị định 170/2025/NĐ-CP - 6 câu)</option>
-                  <option value="10">10. Nghị định 361/2025/NĐ-CP (Quy định về vị trí việc làm công chức - 6 câu)</option>
-                  <option value="11">11. Nghị quyết 03/NQ-CP ngày 09/01/2025 (Chương trình hành động NQ 57 - 6 câu)</option>
-                  <option value="12">12. Kế hoạch 18/KH-UBND ngày 10/01/2026 của UBND TP Huế (Thực hiện NQ 57 - 6 câu)</option>
-                  <option value="13">13. Quyết định 1026/QĐ-UBND ngày 30/3/2026 của UBND TP Huế (CCHC 2026-2030 - 7 câu)</option>
-                </select>
-              </div>
-
-              <!-- Số lượng câu hỏi Phần I -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
-                    Số lượng câu hỏi:
-                  </label>
-                  <select id="selectCountP1" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2.5 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    <option value="60" selected>60 câu (Chuẩn đề tổng hợp)</option>
-                    <option value="30">30 câu (Luyện tập vừa)</option>
-                    <option value="15">15 câu (Luyện nhanh)</option>
-                    <option value="ALL_AVAILABLE">Tất cả câu thuộc phạm vi chọn (tối đa 90 câu)</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
-                    Thời gian quy định:
-                  </label>
-                  <div id="timeDisplayP1" class="w-full rounded-xl border border-blue-200/80 bg-blue-50/70 px-3 py-2.5 text-xs sm:text-sm font-bold text-gov-navy flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-blue-600"></i>
-                    <span>60 phút (1 phút/câu)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-5 pt-0">
-            <button onclick="startExam('PART1')" class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-gov-navy via-gov-royal to-blue-700 hover:from-blue-950 hover:to-blue-800 text-white font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
-              <i class="fa-solid fa-play"></i>
-              <span>BẮT ĐẦU THI PHẦN I (RANDOM ĐỀ)</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- CARD PHẦN II: MÔN THI TIẾNG ANH BẬC 2 -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-amber-500/60 hover:shadow-md transition-all flex flex-col justify-between overflow-hidden">
-          <div>
-            <div class="bg-gradient-to-r from-amber-800 via-amber-600 to-yellow-600 px-5 py-4 text-white flex items-center justify-between">
-              <div class="flex items-center gap-3.5">
-                <div class="w-11 h-11 rounded-xl bg-white/15 border border-white/20 flex items-center justify-center text-white text-xl font-black shadow-inner">
-                  II
-                </div>
-                <div>
-                  <span class="text-[11px] uppercase tracking-wider text-amber-100 font-bold">Môn thi Ngoại ngữ • Thông tư 01/2014/TT-BGDĐT</span>
-                  <h3 class="text-base sm:text-lg font-extrabold">Tiếng Anh Bậc 2 (Theo Vị trí tuyển dụng)</h3>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-black/25 border border-white/30 text-white text-xs font-bold whitespace-nowrap">
-                85 Câu Ngân Hàng
-              </span>
-            </div>
-
-            <div class="p-5 space-y-4">
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Chuẩn Khung năng lực ngoại ngữ 6 bậc (Bậc 2 - A2). Tích hợp ngữ pháp, giao tiếp công vụ, đọc hiểu thông báo và thuật ngữ chuyên ngành cho <strong>3 Vị trí tuyển dụng (VTTD)</strong> tại TP Huế.
-              </p>
-
-              <!-- Chọn Vị trí tuyển dụng VTTD -->
-              <div class="space-y-2">
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">
-                  <i class="fa-solid fa-briefcase text-amber-600 mr-1"></i> Chọn Vị trí tuyển dụng dự thi:
-                </label>
-                <div class="grid grid-cols-1 gap-2.5">
-                  <!-- VTTD 01 -->
-                  <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-slate-200 bg-slate-50/70 hover:bg-amber-50/50 cursor-pointer transition has-[:checked]:border-amber-600 has-[:checked]:bg-amber-50/90 has-[:checked]:shadow-2xs">
-                    <input type="radio" name="vttd" value="VTTD01" checked class="w-4 h-4 text-amber-600 focus:ring-amber-500">
-                    <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
-                      <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <div class="flex-grow text-xs sm:text-sm">
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="font-bold text-slate-900">VTTD 01: Kinh tế - Tài chính</span>
-                        <span id="badgeCountVTTD01" class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 text-[10px] font-extrabold">20 chuyên ngành + 25 chung</span>
-                      </div>
-                      <span class="block text-[11px] text-slate-500 mt-0.5">Ngân sách, thuế điện tử, kiểm toán, đầu tư công, thương mại</span>
-                    </div>
-                  </label>
-
-                  <!-- VTTD 02 -->
-                  <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-slate-200 bg-slate-50/70 hover:bg-amber-50/50 cursor-pointer transition has-[:checked]:border-amber-600 has-[:checked]:bg-amber-50/90 has-[:checked]:shadow-2xs">
-                    <input type="radio" name="vttd" value="VTTD02" class="w-4 h-4 text-amber-600 focus:ring-amber-500">
-                    <div class="w-9 h-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0">
-                      <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <div class="flex-grow text-xs sm:text-sm">
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="font-bold text-slate-900">VTTD 02: Công nghệ thông tin</span>
-                        <span id="badgeCountVTTD02" class="px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 text-[10px] font-extrabold">20 chuyên ngành + 25 chung</span>
-                      </div>
-                      <span class="block text-[11px] text-slate-500 mt-0.5">Chuyển đổi số, Hue-S, an toàn mạng, dữ liệu mở, điện toán đám mây</span>
-                    </div>
-                  </label>
-
-                  <!-- VTTD 03 -->
-                  <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-slate-200 bg-slate-50/70 hover:bg-amber-50/50 cursor-pointer transition has-[:checked]:border-amber-600 has-[:checked]:bg-amber-50/90 has-[:checked]:shadow-2xs">
-                    <input type="radio" name="vttd" value="VTTD03" class="w-4 h-4 text-amber-600 focus:ring-amber-500">
-                    <div class="w-9 h-9 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center flex-shrink-0">
-                      <i class="fa-solid fa-landmark-dome"></i>
-                    </div>
-                    <div class="flex-grow text-xs sm:text-sm">
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="font-bold text-slate-900">VTTD 03: Văn hóa - Xã hội</span>
-                        <span id="badgeCountVTTD03" class="px-2 py-0.5 rounded-md bg-purple-100 text-purple-800 text-[10px] font-extrabold">20 chuyên ngành + 25 chung</span>
-                      </div>
-                      <span class="block text-[11px] text-slate-500 mt-0.5">Di sản Huế, Festival, du lịch xanh, an sinh xã hội, y tế &amp; giáo dục</span>
-                    </div>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Cấu trúc đề Tiếng Anh -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
-                    Cấu trúc đề Tiếng Anh:
-                  </label>
-                  <select id="selectModeP2" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500">
-                    <option value="STANDARD_30" selected>Đề chuẩn 30 câu (15 Chung + 15 VTTD)</option>
-                    <option value="FULL_45">Luyện trọn bộ 45 câu (25 Chung + 20 VTTD)</option>
-                    <option value="ONLY_VTTD_20">Chỉ 20 câu chuyên ngành VTTD đã chọn</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
-                    Thời gian quy định:
-                  </label>
-                  <div id="timeDisplayP2" class="w-full rounded-xl border border-amber-200/80 bg-amber-50/70 px-3 py-2 text-xs sm:text-sm font-bold text-amber-900 flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-amber-600"></i>
-                    <span>30 phút (1 phút/câu)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-5 pt-0">
-            <button onclick="startExam('PART2')" class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 text-white font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
-              <i class="fa-solid fa-language"></i>
-              <span>BẮT ĐẦU THI PHẦN II (TIẾNG ANH BẬC 2)</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- THI TỔNG HỢP CẢ 2 PHẦN -->
-      <div class="bg-gradient-to-r from-gov-dark via-gov-navy to-gov-royal rounded-2xl p-5 sm:p-6 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 border border-slate-700/80">
-        <div class="flex items-start sm:items-center gap-4">
-          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-400 text-2xl flex-shrink-0">
-            <i class="fa-solid fa-layer-group"></i>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <h3 class="text-base sm:text-lg font-extrabold text-amber-300">Tổ hợp Thi thử Toàn diện Vòng 1 (Phần I + Phần II)</h3>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-300 mt-0.5 leading-relaxed">
-              Mô phỏng kỳ thi thực tế liên hoàn: <strong>60 câu Kiến thức chung + 30 câu Tiếng Anh Bậc 2</strong> (Tổng 90 câu / 90 phút) theo đúng Vị trí tuyển dụng đã chọn.
-            </p>
-          </div>
-        </div>
-        <button onclick="startExam('COMBINED')" class="w-full md:w-auto whitespace-nowrap px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
-          <i class="fa-solid fa-bolt"></i>
-          <span>Thi Tổng Hợp 90 Câu</span>
-        </button>
-      </div>
-
-      <!-- BẢNG XẾP HẠNG TRỰC TUYẾN THỜI GIAN THỰC NGAY TRÊN TRANG CHỦ -->
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-        <div class="bg-gradient-to-r from-gov-navy via-gov-royal to-blue-900 px-5 py-4 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 border-amber-500">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-lg flex-shrink-0">
-              <i class="fa-solid fa-trophy"></i>
-            </div>
-            <div>
-              <div class="flex flex-wrap items-center gap-2">
-                <h3 class="font-extrabold text-base sm:text-lg text-white">BẢNG XẾP HẠNG TRỰC TUYẾN (LIVE LEADERBOARD)</h3>
-                <span id="liveSyncBadgeDash" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-[11px] font-bold">
-                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                  <span>Đồng bộ trực tuyến</span>
-                </span>
-              </div>
-              <p class="text-xs text-blue-200 mt-0.5">
-                Mọi kết quả sau khi thí sinh hoàn thành bài thi được tự động lưu vĩnh viễn và cập nhật liên tục cho tất cả thí sinh cùng xem.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-2 self-start sm:self-center">
-            <button onclick="toggleLeaderboardBestMode()" id="btnDashBestMode" class="px-3 py-1.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-xs font-bold text-amber-200 transition flex items-center gap-1.5 cursor-pointer">
-              <i class="fa-solid fa-star"></i>
-              <span>Thành tích cao nhất</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="p-4 sm:p-5 space-y-4">
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <div class="flex flex-wrap items-center gap-1.5" id="dashLbFilterGroup">
-              <button onclick="setLeaderboardFilter('ALL', 'dash')" data-lb-filter="ALL" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-gov-navy text-white cursor-pointer">Tất cả bài thi</button>
-              <button onclick="setLeaderboardFilter('PART1', 'dash')" data-lb-filter="PART1" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">Phần I (Kiến thức chung)</button>
-              <button onclick="setLeaderboardFilter('PART2', 'dash')" data-lb-filter="PART2" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">Phần II (Tiếng Anh Bậc 2)</button>
-              <button onclick="setLeaderboardFilter('COMBINED', 'dash')" data-lb-filter="COMBINED" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">Thi Tổng Hợp</button>
-            </div>
-            <button onclick="openLeaderboardModal()" class="text-xs font-bold text-gov-blue hover:underline cursor-pointer">
-              Xem đầy đủ &amp; Chi tiết <i class="fa-solid fa-up-right-from-square ml-1"></i>
-            </button>
-          </div>
-
-          <div id="dashLeaderboardContent" class="space-y-4">
-            <!-- Render bằng JS -->
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ==================== VIEW 2: GIAO DIỆN LÀM BÀI THI ==================== -->
-    <section id="viewExam" class="hidden animate-fade-in pb-16 lg:pb-0">
-      <!-- Thanh trạng thái bài thi + Progress Bar -->
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-5">
-        <div class="p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3">
-          <div class="flex items-center gap-3">
-            <span id="examBadgePart" class="px-3 py-1.5 rounded-xl bg-gov-navy text-amber-300 text-xs font-extrabold tracking-wide">
-              PHẦN I
-            </span>
-            <div>
-              <h2 id="examTitleDisplay" class="font-bold text-slate-900 text-sm sm:text-base">
-                Kiểm tra Kiến thức, Năng lực chung
-              </h2>
-              <p id="examSubDisplay" class="text-xs text-slate-500">
-                Chế độ: Thi thử tính giờ • Đã đảo ngẫu nhiên câu hỏi &amp; đáp án
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-2 sm:gap-3 ml-auto">
-            <!-- Đồng hồ đếm ngược -->
-            <div id="timerBox" class="px-3.5 py-2 rounded-xl bg-red-50 border border-red-200 text-red-700 font-mono font-extrabold text-sm sm:text-base flex items-center gap-2">
-              <i class="fa-regular fa-clock animate-pulse"></i>
-              <span id="timerText">50:00</span>
-            </div>
-
-            <!-- Nút mở bảng câu hỏi trên Mobile -->
-            <button onclick="toggleMobilePalette()" class="lg:hidden px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold border border-slate-300 flex items-center gap-1.5 cursor-pointer">
-              <i class="fa-solid fa-table-cells"></i>
-              <span><span id="mobileAnsweredCount">0</span>/<span id="mobileTotalCount">50</span></span>
-            </button>
-
-            <!-- Nút Nộp bài -->
-            <button onclick="confirmSubmitExam()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-sm transition flex items-center gap-1.5 cursor-pointer">
-              <i class="fa-solid fa-paper-plane"></i>
-              <span>Nộp bài</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Thanh tiến độ trực quan -->
-        <div class="w-full bg-slate-100 h-2 relative">
-          <div id="examProgressBar" class="bg-gradient-to-r from-gov-blue via-blue-500 to-amber-500 h-2 transition-all duration-300" style="width: 0%"></div>
-        </div>
-      </div>
-
-      <!-- Layout 2 cột: Trái là Câu hỏi, Phải là Danh sách câu hỏi -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-        
-        <!-- Cột Trái: Nội dung câu hỏi hiện tại (8 cols) -->
-        <div class="lg:col-span-8 space-y-4">
-          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-7">
-            <!-- Header câu hỏi -->
-            <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-slate-100">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-3 py-1 rounded-lg bg-blue-100 text-gov-navy font-extrabold text-sm">
-                  Câu <span id="qCurrentNum">1</span> / <span id="qTotalNum">50</span>
-                </span>
-                <span id="qSourceTag" class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">
-                  Luật Tổ chức CQĐP 2025
-                </span>
-              </div>
-
-              <button id="btnFlagQuestion" onclick="toggleFlagCurrent()" class="px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-amber-50 text-slate-600 text-xs font-semibold transition flex items-center gap-1.5 cursor-pointer">
-                <i class="fa-regular fa-flag"></i>
-                <span>Đánh dấu xem lại</span>
-              </button>
-            </div>
-
-            <!-- Đoạn văn đọc hiểu (nếu có cho Tiếng Anh) -->
-            <div id="qPassageBox" class="hidden mb-5 p-4 rounded-xl bg-amber-50/80 border-l-4 border-amber-500 text-slate-800 text-xs sm:text-sm leading-relaxed shadow-2xs">
-              <div class="font-bold text-amber-800 uppercase text-[11px] mb-1.5 tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-book-open"></i> Reading / Context Passage:
-              </div>
-              <div id="qPassageText" class="font-medium text-slate-800"></div>
-            </div>
-
-            <!-- Nội dung câu hỏi -->
-            <div id="qText" class="text-base sm:text-lg font-bold text-slate-900 leading-relaxed mb-6">
-              Đang tải nội dung câu hỏi...
-            </div>
-
-            <!-- Danh sách 4 lựa chọn A, B, C, D -->
-            <div id="qOptionsList" class="space-y-3">
-              <!-- Render bằng JS -->
-            </div>
-
-            <!-- Khung giải thích tức thì (Chỉ hiện khi ở Chế độ Ôn tập và đã chọn đáp án) -->
-            <div id="practiceFeedbackBox" class="hidden mt-6 p-4 sm:p-5 rounded-xl border transition-all">
-              <div id="practiceFeedbackHeader" class="font-bold text-sm sm:text-base flex items-center gap-2 mb-2"></div>
-              <div id="practiceFeedbackExplanation" class="text-xs sm:text-sm text-slate-700 leading-relaxed"></div>
-            </div>
-          </div>
-
-          <!-- Thanh điều hướng Trước / Sau trên Desktop & Tablet -->
-          <div class="hidden sm:flex items-center justify-between gap-3">
-            <button id="btnPrevQ" onclick="prevQuestion()" class="px-5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 font-bold text-sm shadow-2xs transition flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer">
-              <i class="fa-solid fa-arrow-left"></i>
-              <span>Câu trước</span>
-            </button>
-
-            <div class="flex items-center gap-2">
-              <span class="hidden xl:inline-block text-[11px] text-slate-400 mr-2">
-                Phím tắt: <kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded text-slate-600 font-mono">A-D</kbd> chọn, <kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded text-slate-600 font-mono">← →</kbd> chuyển câu
-              </span>
-              <button onclick="shuffleRemainingOrder()" title="Tạo đề ngẫu nhiên mới" class="px-3.5 py-3 rounded-xl bg-white hover:bg-amber-50 border border-slate-300 text-slate-700 font-semibold text-sm shadow-2xs transition flex items-center gap-1.5 cursor-pointer">
-                <i class="fa-solid fa-shuffle text-amber-600"></i>
-                <span>Đổi đề ngẫu nhiên</span>
-              </button>
-            </div>
-
-            <button id="btnNextQ" onclick="nextQuestion()" class="px-6 py-3 rounded-xl bg-gov-navy hover:bg-blue-800 text-white font-bold text-sm shadow-2xs transition flex items-center gap-2 cursor-pointer">
-              <span>Câu tiếp theo</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Cột Phải: Phiếu trả lời / Question Palette (4 cols) -->
-        <div id="paletteSidebar" class="hidden lg:block lg:col-span-4 bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sticky top-24">
-          <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
-            <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
-              <i class="fa-solid fa-grip text-blue-700"></i>
-              <span>Phiếu Trả Lời Trắc Nghiệm</span>
-            </h3>
-            <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-lg">
-              Đã làm: <span id="paletteAnsweredCount">0</span>/<span id="paletteTotalCount">50</span>
-            </span>
-          </div>
-
-          <!-- Chú thích màu -->
-          <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-600 mb-4 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
-            <div class="flex items-center gap-1.5">
-              <span class="w-3.5 h-3.5 rounded bg-blue-600 inline-block"></span> Đã chọn đáp án
-            </div>
-            <div class="flex items-center gap-1.5">
-              <span class="w-3.5 h-3.5 rounded bg-white border border-slate-300 inline-block"></span> Chưa làm
-            </div>
-            <div class="flex items-center gap-1.5">
-              <span class="w-3.5 h-3.5 rounded bg-amber-400 inline-block"></span> Đánh dấu xem lại
-            </div>
-            <div class="flex items-center gap-1.5">
-              <span class="w-3.5 h-3.5 rounded ring-2 ring-gov-navy bg-blue-100 inline-block"></span> Đang xem
-            </div>
-          </div>
-
-          <!-- Lưới nút số câu hỏi -->
-          <div id="questionGrid" class="grid grid-cols-6 gap-2 max-h-[360px] overflow-y-auto pr-1">
-            <!-- Render bằng JS -->
-          </div>
-
-          <div class="mt-5 pt-4 border-t border-slate-100">
-            <button onclick="confirmSubmitExam()" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow transition flex items-center justify-center gap-2 cursor-pointer">
-              <i class="fa-solid fa-check-double"></i>
-              <span>NỘP BÀI &amp; XEM KẾT QUẢ</span>
-            </button>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Sticky Bottom Navigation Bar dành riêng cho Mobile -->
-      <div class="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 flex items-center justify-between gap-2 shadow-lg">
-        <button id="btnPrevQMobile" onclick="prevQuestion()" class="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5 disabled:opacity-40">
-          <i class="fa-solid fa-arrow-left"></i>
-          <span>Trước</span>
-        </button>
-        <button onclick="toggleMobilePalette()" class="py-2.5 px-3.5 rounded-xl bg-blue-50 border border-blue-200 text-gov-navy font-bold text-xs flex items-center gap-1.5">
-          <i class="fa-solid fa-grip"></i>
-          <span>Bảng câu</span>
-        </button>
-        <button id="btnNextQMobile" onclick="nextQuestion()" class="flex-1 py-2.5 px-3 rounded-xl bg-gov-navy text-white font-bold text-xs flex items-center justify-center gap-1.5">
-          <span>Tiếp theo</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
-    </section>
-
-    <!-- ==================== VIEW 3: KẾT QUẢ & ĐÁP ÁN CHI TIẾT ==================== -->
-    <section id="viewResult" class="hidden animate-fade-in space-y-6">
-      
-      <!-- Bảng Tổng hợp Điểm số -->
-      <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
-        <div id="resultBannerHeader" class="bg-gradient-to-r from-gov-dark via-gov-navy to-blue-800 p-6 text-white flex flex-col md:flex-row items-center justify-between gap-4">
-          <div class="flex items-center gap-4 text-center md:text-left">
-            <div id="resultStatusIcon" class="w-16 h-16 rounded-2xl bg-white/15 border border-white/20 flex items-center justify-center text-3xl text-amber-300 flex-shrink-0 mx-auto md:mx-0">
-              <i class="fa-solid fa-award"></i>
-            </div>
-            <div>
-              <span id="resultPassBadge" class="inline-block px-3 py-0.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-emerald-500 text-white mb-1">
-                ĐẠT YÊU CẦU (≥ 50%)
-              </span>
-              <h2 class="text-xl sm:text-2xl font-extrabold">KẾT QUẢ BÀI THI THỬ CÔNG CHỨC</h2>
-              <p id="resultExamName" class="text-xs sm:text-sm text-blue-200 mt-0.5">Phần I: Kiến thức, năng lực chung</p>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-center gap-3">
-            <button onclick="retakeSameConfig()" class="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm shadow transition flex items-center gap-2 cursor-pointer">
-              <i class="fa-solid fa-rotate-right"></i>
-              <span>Thi lại (Đề random mới)</span>
-            </button>
-            <button onclick="goHome()" class="px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-xs sm:text-sm border border-white/25 transition flex items-center gap-2 cursor-pointer">
-              <i class="fa-solid fa-house"></i>
-              <span>Về trang chủ</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- 4 Thẻ chỉ số kết quả -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-5 sm:p-6 bg-slate-50 border-b border-slate-200">
-          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs text-center">
-            <div class="text-xs font-bold text-slate-500 uppercase">Số câu trả lời đúng</div>
-            <div class="text-2xl sm:text-3xl font-black text-emerald-600 mt-1">
-              <span id="resCorrect">0</span>/<span id="resTotal">50</span>
-            </div>
-          </div>
-          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs text-center">
-            <div class="text-xs font-bold text-slate-500 uppercase">Tỷ lệ chính xác</div>
-            <div id="resPercent" class="text-2xl sm:text-3xl font-black text-gov-blue mt-1">0%</div>
-          </div>
-          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs text-center">
-            <div class="text-xs font-bold text-slate-500 uppercase">Số câu sai / Bỏ trống</div>
-            <div class="text-2xl sm:text-3xl font-black text-red-600 mt-1">
-              <span id="resWrong">0</span> / <span id="resUnanswered">0</span>
-            </div>
-          </div>
-          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs text-center">
-            <div class="text-xs font-bold text-slate-500 uppercase">Thời gian hoàn thành</div>
-            <div id="resTimeTaken" class="text-2xl sm:text-3xl font-black text-slate-800 mt-1">00:00</div>
-          </div>
-        </div>
-
-        <!-- Khối Bảng Xếp Hạng Tự Động Cập Nhật Ngay Trên Trang Kết Quả -->
-        <div class="p-5 sm:p-6 bg-gradient-to-b from-amber-50/50 to-white border-b border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-amber-200/70">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-white flex items-center justify-center text-xl shadow-sm flex-shrink-0">
-                <i class="fa-solid fa-trophy"></i>
-              </div>
-              <div>
-                <div class="flex flex-wrap items-center gap-2">
-                  <h3 class="font-extrabold text-slate-900 text-base sm:text-lg">Bảng Xếp Hạng Thi Thử Công Chức</h3>
-                  <span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 text-[11px] font-bold">
-                    <i class="fa-solid fa-circle-check mr-1"></i>Đã tự động cập nhật kết quả
-                  </span>
-                </div>
-                <p id="resultRankSummary" class="text-xs sm:text-sm text-slate-600 mt-0.5">
-                  Vị trí của bạn đang được xếp hạng theo tỷ lệ chính xác (%) và thời gian hoàn thành.
-                </p>
-              </div>
-            </div>
-
-            <!-- Cho phép sửa nhanh tên hiển thị trên BXH nếu lúc đầu để trống -->
-            <div class="flex flex-wrap items-center gap-2">
-              <input id="quickUpdateNameInput" type="text" maxlength="50" placeholder="Đổi tên hiển thị trên BXH..." class="px-3 py-2 rounded-xl border border-slate-300 bg-white text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500" />
-              <button onclick="updateLatestEntryName()" class="px-3.5 py-2 rounded-xl bg-gov-navy hover:bg-blue-800 text-white font-bold text-xs sm:text-sm transition cursor-pointer whitespace-nowrap">
-                <i class="fa-solid fa-pen-to-square mr-1"></i>Cập nhật tên
-              </button>
-            </div>
-          </div>
-
-          <!-- Bộ lọc hạng mục trên BXH trang kết quả -->
-          <div class="flex flex-wrap items-center justify-between gap-2 mt-4 mb-4">
-            <div class="flex flex-wrap items-center gap-1.5" id="resultLbFilterGroup">
-              <button onclick="setLeaderboardFilter('ALL', 'result')" data-lb-filter="ALL" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-gov-navy text-white cursor-pointer">Tất cả bài thi</button>
-              <button onclick="setLeaderboardFilter('PART1', 'result')" data-lb-filter="PART1" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">Phần I (Kiến thức chung)</button>
-              <button onclick="setLeaderboardFilter('PART2', 'result')" data-lb-filter="PART2" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">Phần II (Tiếng Anh Bậc 2)</button>
-              <button onclick="setLeaderboardFilter('COMBINED', 'result')" data-lb-filter="COMBINED" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">Thi Tổng Hợp</button>
-            </div>
-            <button onclick="openLeaderboardModal()" class="text-xs font-bold text-gov-blue hover:underline cursor-pointer">
-              Mở toàn màn hình BXH <i class="fa-solid fa-up-right-from-square ml-1"></i>
-            </button>
-          </div>
-
-          <!-- Bục vinh danh Top 3 & Bảng xếp hạng trực tiếp -->
-          <div id="resultLeaderboardContent" class="space-y-4"></div>
-        </div>
-
-        <!-- Thanh công cụ lọc xem lại đáp án -->
-        <div class="p-4 sm:px-6 bg-white flex flex-wrap items-center justify-between gap-3">
-          <h3 class="font-bold text-slate-800 text-base flex items-center gap-2">
-            <i class="fa-solid fa-file-circle-check text-blue-700"></i>
-            <span>Bảng Đáp Án &amp; Căn Cứ Pháp Lý Chi Tiết</span>
-          </h3>
-          <div class="flex flex-wrap items-center gap-2">
-            <button onclick="filterReview('ALL')" id="filterAllBtn" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-gov-navy text-white cursor-pointer">
-              Tất cả câu hỏi
-            </button>
-            <button onclick="filterReview('WRONG')" id="filterWrongBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-red-50 hover:text-red-700 cursor-pointer">
-              Chỉ câu sai / chưa làm
-            </button>
-            <button onclick="filterReview('CORRECT')" id="filterCorrectBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 cursor-pointer">
-              Chỉ câu làm đúng
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Danh sách từng câu hỏi và giải thích sau khi nộp bài -->
-      <div id="reviewQuestionsContainer" class="space-y-4">
-        <!-- Render bằng JS -->
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- ==================== MODAL XÁC NHẬN NỘP BÀI ==================== -->
-  <div id="submitModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 animate-fade-in">
-      <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 mx-auto">
-        <i class="fa-solid fa-circle-question"></i>
-      </div>
-      <h3 class="text-lg font-extrabold text-center text-slate-900">Xác nhận Nộp bài thi?</h3>
-      <p id="submitModalDesc" class="text-sm text-slate-600 text-center mt-2 leading-relaxed">
-        Bạn đã hoàn thành 0/50 câu hỏi.
-      </p>
-      <div class="grid grid-cols-2 gap-3 mt-6">
-        <button onclick="closeSubmitModal()" class="py-2.5 px-4 rounded-xl border border-slate-300 text-slate-700 font-bold text-sm hover:bg-slate-50 transition cursor-pointer">
-          Tiếp tục làm bài
-        </button>
-        <button onclick="finalizeExam()" class="py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow transition cursor-pointer">
-          Nộp bài ngay
+        <a href="https://zalo.me/0562242242" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sky-300 hover:text-amber-300 font-semibold transition">
+          <i class="fa-solid fa-comment-dots text-sky-400"></i>
+          <span>Zalo Hỗ trợ: 0562.242.242</span>
+        </a>
+        <button type="button" onclick="copyZaloNumber()" title="Sao chép số Zalo 0562.242.242" class="px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-[11px] text-slate-200 transition cursor-pointer">
+          <i class="fa-regular fa-copy"></i>
         </button>
       </div>
     </div>
@@ -916,32 +179,21 @@
       </div>
 
       <!-- Nội dung Bảng Xếp Hạng -->
-      <div id="modalLeaderboardContent" class="p-4 sm:p-6 overflow-y-auto space-y-5 flex-grow">
-        <!-- Render bằng JS -->
-      </div>
-
-      <div class="px-6 py-3 bg-slate-50 border-t border-slate-200 rounded-b-2xl flex items-center justify-between">
-        <span class="text-[11px] text-slate-500">Tiêu chí xếp hạng: Tỷ lệ chính xác (%) giảm dần → Số câu đúng giảm dần → Thời gian làm bài tăng dần.</span>
-        <button onclick="closeLeaderboardModal()" class="px-5 py-2 rounded-xl bg-gov-navy text-white font-bold text-sm cursor-pointer">Đóng</button>
-      </div>
+  <!-- ==================== FLOATING ZALO CONTACT BUTTON & TOAST ==================== -->
+  <div id="floatingZaloWrapper" class="fixed right-4 bottom-20 sm:bottom-6 z-40 flex flex-col items-end gap-2">
+    <div id="zaloCopyToast" class="hidden px-3.5 py-2 rounded-xl bg-gov-dark text-amber-300 border border-amber-400/50 text-xs font-bold shadow-xl animate-fade-in">
+      <i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>Đã sao chép số Zalo: 0562.242.242
     </div>
-  </div>
-
-  <!-- ==================== MODAL BẢNG CÂU HỎI CHO MOBILE ==================== -->
-  <div id="mobilePaletteModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-3">
-    <div class="bg-white rounded-2xl w-full max-w-md p-5 shadow-2xl border border-slate-200 animate-fade-in">
-      <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
-        <h3 class="font-bold text-slate-900 text-base">Danh sách câu hỏi</h3>
-        <button onclick="toggleMobilePalette()" class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-600">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div id="mobileQuestionGrid" class="grid grid-cols-6 gap-2 max-h-[55vh] overflow-y-auto p-1">
-        <!-- Render bằng JS -->
-      </div>
-      <button onclick="toggleMobilePalette(); confirmSubmitExam();" class="mt-4 w-full py-3 rounded-xl bg-emerald-600 text-white font-bold text-sm">
-        Nộp bài thi ngay
+    <div class="flex items-center bg-white/95 backdrop-blur-md border border-sky-200 shadow-xl rounded-full p-1 pl-3 gap-2 hover:border-sky-400 transition group">
+      <button type="button" onclick="copyZaloNumber()" title="Sao chép số Zalo 0562.242.242" class="text-left cursor-pointer">
+        <span class="block text-[10px] font-bold uppercase tracking-wider text-slate-500 leading-none">Hỗ trợ thí sinh</span>
+        <span class="block text-xs sm:text-sm font-extrabold text-sky-700 group-hover:text-sky-800 leading-tight mt-0.5">
+          Zalo: 0562.242.242
+        </span>
       </button>
+      <a href="https://zalo.me/0562242242" target="_blank" rel="noopener noreferrer" title="Nhắn tin qua Zalo 0562.242.242" class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white flex items-center justify-center shadow-md flex-shrink-0 transition transform group-hover:scale-105">
+        <span class="font-black text-[11px] tracking-tighter">Zalo</span>
+      </a>
     </div>
   </div>
 
@@ -957,14 +209,25 @@
             Tài liệu hỗ trợ thí sinh ôn tập, hệ thống hóa kiến thức pháp luật hành chính &amp; ngoại ngữ theo chuẩn quy định hiện hành.
           </p>
         </div>
-        <div class="flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3.5 py-2 rounded-xl">
-          <i class="fa-solid fa-code text-amber-400"></i>
-          <span class="font-semibold text-amber-300">KHOACIT Digital Solutions</span>
+        <div class="flex flex-wrap items-center justify-center gap-2.5">
+          <a href="https://zalo.me/0562242242" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/40 px-3.5 py-2 rounded-xl text-sky-200 font-bold transition">
+            <i class="fa-solid fa-comment-dots text-sky-400"></i>
+            <span>Mọi thắc mắc liên hệ Zalo: 0562.242.242</span>
+          </a>
+          <button type="button" onclick="copyZaloNumber()" class="inline-flex items-center gap-1.5 text-xs bg-white/5 hover:bg-white/15 border border-white/15 px-3 py-2 rounded-xl text-amber-300 font-semibold transition cursor-pointer">
+            <i class="fa-regular fa-copy"></i>
+            <span>Sao chép SĐT</span>
+          </button>
         </div>
       </div>
       <div class="my-4 border-t border-slate-800"></div>
-      <div class="text-center text-xs sm:text-sm text-slate-200 font-medium leading-relaxed">
-        Bản quyền thuộc về <span class="text-amber-400 font-bold">KHOACIT</span> - Quản lý hệ thống: <span class="text-white font-semibold">Trần Anh Khoa</span>
+      <div class="text-center text-xs sm:text-sm text-slate-200 font-medium leading-relaxed space-y-1">
+        <div>
+          Mọi thắc mắc liên hệ Zalo: <a href="https://zalo.me/0562242242" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 font-extrabold underline decoration-sky-500/50">0562.242.242</a>
+        </div>
+        <div>
+          Bản quyền thuộc về <span class="text-amber-400 font-bold">KHOACIT</span> - Quản lý hệ thống: <span class="text-white font-semibold">Trần Anh Khoa</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -4329,6 +3592,28 @@
 
     function closeDocModal() {
       document.getElementById('docModal').classList.add('hidden');
+    }
+
+    // Sao chép nhanh số điện thoại Zalo hỗ trợ 0562.242.242
+    function copyZaloNumber() {
+      const phone = '0562.242.242';
+      const tempInput = document.createElement('input');
+      tempInput.value = phone;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+      } catch (e) {}
+      document.body.removeChild(tempInput);
+
+      const toast = document.getElementById('zaloCopyToast');
+      if (toast) {
+        toast.classList.remove('hidden');
+        clearTimeout(window.__zaloToastTimer);
+        window.__zaloToastTimer = setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 2600);
+      }
     }
   </script>
 
